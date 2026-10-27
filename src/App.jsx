@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Toolbar from './Toolbar';
 import HelpButton from './HelpButton';
 import SearchBar from './SearchBar';
+import EmailForm from './EmailForm';
 import './App.css';
 
 export default function App() {
@@ -37,6 +38,17 @@ export default function App() {
           <h2>Quête 4 — Navigation clavier</h2>
 
           <SearchBar />
+        </section>
+
+        <section>
+          <h2>Quête 5 — Contrastes et messages d’erreur</h2>
+
+          <p>
+            Une erreur doit être expliquée par un texte,
+            pas seulement signalée par une couleur.
+          </p>
+
+          <EmailForm />
         </section>
       </main>
 
