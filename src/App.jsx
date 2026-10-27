@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Toolbar from './Toolbar';
 import HelpButton from './HelpButton';
+import SearchBar from './SearchBar';
 import './App.css';
 
 export default function App() {
@@ -30,6 +31,12 @@ export default function App() {
           <p>Consulte les formats d’image acceptés :</p>
 
           <HelpButton />
+        </section>
+
+        <section>
+          <h2>Quête 4 — Navigation clavier</h2>
+
+          <SearchBar />
         </section>
       </main>
 
