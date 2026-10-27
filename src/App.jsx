@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Toolbar from './Toolbar';
+import HelpButton from './HelpButton';
 import './App.css';
 
 export default function App() {
@@ -8,18 +9,28 @@ export default function App() {
   return (
     <>
       <header>
-        <h1>Quête 2 — HTML sémantique en React</h1>
+        <h1>Exercices d’accessibilité en React</h1>
       </header>
 
       <main>
-        <h2>Mes actions</h2>
+        <section>
+          <h2>Quête 2 — Toolbar accessible</h2>
 
-        <Toolbar
-          onSave={() => setMessage('Enregistrement effectué.')}
-          onDelete={() => setMessage('Suppression effectuée.')}
-        />
+          <Toolbar
+            onSave={() => setMessage('Enregistrement effectué.')}
+            onDelete={() => setMessage('Suppression effectuée.')}
+          />
 
-        <p role="status">{message}</p>
+          <p role="status">{message}</p>
+        </section>
+
+        <section>
+          <h2>Quête 3 — Bouton d’aide accessible</h2>
+
+          <p>Consulte les formats d’image acceptés :</p>
+
+          <HelpButton />
+        </section>
       </main>
 
     </>
